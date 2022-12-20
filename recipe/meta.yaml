@@ -6,12 +6,12 @@ package:
   version: {{ version }}
 
 source:
-  url: http://www.astromatic.net/download/{{ name }}/{{ name }}-{{ version}}.tar.gz
+  url: http://www.astromatic.net/download/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: f4e85146c17fe8dcf160d12dc6df08bbd9212bb8444162b2e6ebf03f7513a992
 
 build:
   skip: true  # [win]
-  number: 1
+  number: 2
 
 requirements:
   build:
