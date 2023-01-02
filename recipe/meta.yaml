@@ -6,8 +6,8 @@ package:
   version: {{ version }}
 
 source:
-  url: http://www.astromatic.net/download/{{ name }}/{{ name }}-{{ version}}.tar.gz
-  sha256: f4e85146c17fe8dcf160d12dc6df08bbd9212bb8444162b2e6ebf03f7513a992
+  url: https://github.com/astromatic/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
+  sha256: ce64832c77846022c0be464982791e66442561fd0ca145d54068ef4d08dc2c81
 
 build:
   skip: true  # [win]
@@ -19,6 +19,7 @@ requirements:
     - make
   host:
     - libtiff
+    - zlib
 
 test:
   commands:
